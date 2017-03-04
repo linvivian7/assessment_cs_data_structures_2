@@ -1,0 +1,183 @@
+Part 1: Discussion Questions
+
+Recursion
+
+1. In your own words, what is recursion?
+    
+    - Recursion is an alternate method of solving what can be solved 
+    iteratively through for or while loops. A recursion function calls 
+    itself, usually passing in modified inputs.
+
+2.  Why is it necessary to have a base case?
+    
+    - Without a base case, the function could recurse forever (until 
+      python decides that the number of recursion is unreasonable).
+
+Graphs
+
+1. What is a graph?
+
+    - A graph consists of vertices and edges that connect them. There could 
+      be more than one cluster within a graph, and the graph could be directed
+      or undirected. We could track different vertex attributes such as its
+      adjacency list, weights on the arcs, etc.
+
+2. How is a graph different from a tree?
+
+    - A tree implies inherent order that is either hierarchical or natural. 
+      A graph simply means that the two vertices/nodes are related, but not that
+      either one has inherently higher ranking. Depends on whether or not there's
+      a starting node / which graph algorithm we choose to implement, we could
+      prioritize certain nodes and edges.
+
+3. Give an example of something that would be good to model with a graph
+
+    - How reward programs related to one another is perfect for a directed graph.
+      American Express Premier Gold points can be converted at 3:1 to 
+      Starwood Preferred Guest points, but not the other way around. 
+      Therefore, the AMEX and SPG vertices have an arc with weight 1/3 from 
+      Amex --> SPG
+
+    - ^--- This is the core of my project 
+
+
+Performance of Different Data Structures
+
+Index: Find an item in the structure when you know its position
+
+    - Linked List | O(N)
+    - Doubly Linked-List | O(N)
+
+Search: Find an item in the structure when you know its data
+
+    - Linked List | O(N)
+    - Doubly Linked-List | O(N)
+
+Add(R): Set a key in set/dictionary or add node to tree
+
+    - Linked List | O(1)
+    - Doubly-Linked List | O(1)
+    - Queue (as array) | O(1)
+    - Queue (as LL or DLL) | O(1)
+    - Stack | O(1)
+    - Deque | O(1)
+
+Add(L): Set a key in set/dictionary or add node to tree
+
+    - Python List (Array) | O(N)
+    - Linked List | O(1)
+    - Doubly-Linked List | O(1)
+    - Deque | O(1)
+
+Pop(L): Remove a key or node
+
+    - Python List (Array) | O(N)
+    - Linked List | O(1)
+    - Doubly-Linked List | O(1)
+    - Queue (as array) | O(N)
+    - Queue (as LL or DLL) | O(1)
+    - Deque | O(1)
+
+Pop(R): Remove a key or node
+
+    - Python List (Array) | O(1)
+    - Linked List | O(1)
+    - Doubly-Linked List | O(1)
+    - Stack | O(1)
+    - Deque | O(1)
+
+Runtime & Memeory
+
+Get: Find an item in the structure
+
+    - Set | O(1)
+    - BST | O(lg N)
+    - Tree | O(N)
+
+Add: Set a key in set/dictionary or add node to tree
+
+    - Set | O(1)
+    - BST | O(lg N)
+    - Tree | O(1)
+
+Delete: Remove a key or node
+
+    - Set | O(1)
+    - BST | O(lg N)
+    - Tree | O(1)
+
+Iterate: Find next item in data structure
+
+    - Set | O(N)
+    - BST | O(N)
+    - Tree | O(N)
+
+Memory: Relative to data, how much memory is used? (Choices: a little, medium, or a lot)
+
+    - Set | medium
+    - BST | little
+    - Tree | little
+
+Sorting
+
+1. Describe in words how the Bubble Sort algorithm works.
+
+    - Bubble sort compares two adjacent values, sorts those two with the higher
+    value on the right, and then the highest value will end up on the farthest right at
+    the end of the first pass... Then the second highest will be on the second of last 
+    on the right on the second pass. Then it continues until the entire array is sorted.
+    Bubble sort is O(N^2).
+
+2. Describe in words how the Merge Sort algorithm works.
+
+    - Merge sort utilizes recursion to further divide the problem area into 2 sections.
+      The base case is when there are only 1 number in each of those sections, then 
+      the series converges. The whole reasoning behind why merge sort is efficient is that
+      we're sorting what's already been sorted (at a lower level). Merge sort is O(N lg N).
+
+3. Describe in words how the Quick Sort algorithm works.
+
+    - Quick Sort has three major components. i, j, and pivot. i is the pivot divider that
+      gets incremented when the value at our current index, j, is less than our pivot 
+      value, which can be the furthest right index, or a randomly chosen index.
+      Quick sort has an average run-time of O(N lg n), but performance-wise has shown 
+      greater speed than merge sort.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
